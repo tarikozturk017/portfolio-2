@@ -1,6 +1,7 @@
 import Sidebar from "../sidebar/Sidebar";
 import "./navbar.scss";
 import { motion } from "framer-motion";
+import resume from "../../../public/resume.pdf";
 
 const Navbar = () => {
   return (
@@ -16,7 +17,12 @@ const Navbar = () => {
           Tarik Ozturk
         </motion.span>
         <div className="social">
-          <a href="#">
+          <a href={resume} target="_blank" rel="noreferrer">
+            <div className="resume">
+              <button>My Resume</button>
+            </div>
+          </a>
+          {/* <a href="#">
             <img src="/facebook.png" alt="" />
           </a>
           <a href="#">
@@ -24,10 +30,7 @@ const Navbar = () => {
           </a>
           <a href="#">
             <img src="/facebook.png" alt="" />
-          </a>
-          <a href="#">
-            <img src="/facebook.png" alt="" />
-          </a>
+          </a> */}
         </div>
       </div>
     </div>
