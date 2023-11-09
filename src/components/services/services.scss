@@ -15,7 +15,7 @@
     gap: 20px;
 
     @include mobile {
-      align-self: center;
+      align-self: right;
       text-align: center;
       flex-direction: column;
     }
@@ -25,6 +25,10 @@
       font-size: 20px;
       color: gray;
       text-align: right;
+      @include mobile {
+        margin-right: -35px;
+        font-size: 16px;
+      }
     }
 
     hr {
@@ -76,11 +80,11 @@
       }
 
       h1 {
-        font-size: 96px;
+        font-size: 76px;
         font-weight: 100;
 
         @include mobile {
-          font-size: 36px;
+          font-size: 32px;
         }
       }
 
@@ -113,17 +117,19 @@
     }
 
     .box {
+      font-size: 20px;
       padding: 50px;
       border: 0.5px solid gray;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: space-around;
 
       @include mobile {
         border: none;
         align-items: center;
         gap: 20px;
         padding: 10px;
+        font-size: 10px;
       }
 
       p {

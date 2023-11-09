@@ -7,6 +7,8 @@ import Services from "./components/services/Services";
 import Contact from "./components/contact/Contact";
 import Cursor from "./components/cursor/Cursor";
 
+// import IMAGES from "./components/slider/Images";
+
 const App = () => {
   return (
     <div>

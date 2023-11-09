@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 import "./slider.scss";
 
-import { IMAGES } from "./Images";
+// import { IMAGES } from "./Images";
 
 const sliderVariants = {
   incoming: (direction) => ({
@@ -24,14 +24,14 @@ const sliderTransition = {
   ease: [0.56, 0.03, 0.12, 1.04],
 };
 
-const Slider = () => {
+const Slider = ({ images }) => {
   const [imageCount, setImageCount] = useState(0);
 
   const activeImageIndex = imageCount;
 
   const swipeToImage = (swipeDirection) => {
     const newIndex = imageCount + swipeDirection;
-    if (newIndex >= 0 && newIndex < IMAGES.length) {
+    if (newIndex >= 0 && newIndex < images.length) {
       setImageCount(newIndex);
     }
   };
@@ -58,7 +58,7 @@ const Slider = () => {
             <motion.div
               key={imageCount}
               style={{
-                backgroundImage: `url(${IMAGES[activeImageIndex].imageSrc})`,
+                backgroundImage: `url(${images[activeImageIndex].imageSrc})`,
               }}
               custom={imageCount}
               variants={sliderVariants}
@@ -76,13 +76,13 @@ const Slider = () => {
         </div>
 
         <div className="buttons">
-          <button onClick={() => swipeToImage(-1)}>PREV</button>
-          <button onClick={() => swipeToImage(1)}>NEXT</button>
+          <button onClick={() => swipeToImage(-1)}>{"<"}</button>
+          <button onClick={() => swipeToImage(1)}>{">"}</button>
         </div>
       </div>
 
       <div className="thumbnails">
-        {IMAGES.map((image) => (
+        {images.map((image) => (
           <div
             key={image.id}
             onClick={() => skipToImage(image.id)}

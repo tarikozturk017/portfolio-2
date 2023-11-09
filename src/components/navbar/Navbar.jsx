@@ -14,7 +14,7 @@ const Navbar = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          Tarik Ozturk
+          {/* Tarik Ozturk */}
         </motion.span>
         <div className="social">
           <a href={resume} target="_blank" rel="noreferrer">

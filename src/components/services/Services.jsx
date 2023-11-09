@@ -32,21 +32,21 @@ const Services = () => {
     >
       <motion.div className="textContainer" variants={variants}>
         <p>
-          I focus on helping your brand grow <br /> and move forward
+          I craft innovative <br /> solutions to elevate brands.
         </p>
         <hr />
       </motion.div>
       <motion.div className="titleContainer" variants={variants}>
         <div className="title">
-          <img src="/people.webp" alt="" />
+          <img src="/coding.webp" alt="" />
           <h1>
-            <motion.b whileHover={{ color: "orange" }}>Unique</motion.b> Ideas
+            <motion.b whileHover={{ color: "orange" }}>Crafting</motion.b> Tech
+            with
           </h1>
         </div>
         <div className="title">
           <h1>
-            <motion.b whileHover={{ color: "orange" }}>For Your</motion.b>{" "}
-            Business.
+            <motion.b whileHover={{ color: "orange" }}>Clean</motion.b> Code
           </h1>
           <button>WHAT I DO?</button>
         </div>
@@ -56,53 +56,57 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Web Development</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
-            libero aliquam nemo voluptatum cumque, enim eum laboriosam
-            exercitationem consequuntur possimus temporibus culpa facilis
-            provident facere explicabo tenetur ut similique at!
+            <ul>
+              <li>Frontend Development</li>
+              <li>Backend Development</li>
+              <li>Full-Stack Development</li>
+            </ul>
           </p>
-          <button>Go</button>
+          {/* <button>Go</button> */}
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Mobile App Development</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
-            libero aliquam nemo voluptatum cumque, enim eum laboriosam
-            exercitationem consequuntur possimus temporibus culpa facilis
-            provident facere explicabo tenetur ut similique at!
+            <ul>
+              <li>iOS App Development</li>
+              <li> Android App Development</li>
+              <li> Cross-Platform App Development</li>
+            </ul>
           </p>
-          <button>Go</button>
+          {/* <button>Go</button> */}
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Software Solutions</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
-            libero aliquam nemo voluptatum cumque, enim eum laboriosam
-            exercitationem consequuntur possimus temporibus culpa facilis
-            provident facere explicabo tenetur ut similique at!
+            <ul>
+              <li>Custom Software Development</li>
+              <li>Application Architecture</li>
+              <li>API Development</li>
+            </ul>
           </p>
-          <button>Go</button>
+          {/* <button>Go</button> */}
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Database Design and Management</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
-            libero aliquam nemo voluptatum cumque, enim eum laboriosam
-            exercitationem consequuntur possimus temporibus culpa facilis
-            provident facere explicabo tenetur ut similique at!
+            <ul>
+              <li>Relational Database Design</li>
+              <li>NoSQL Database Management</li>
+              <li>Database Optimization</li>
+            </ul>
           </p>
-          <button>Go</button>
+          {/* <button>Go</button> */}
         </motion.div>
       </motion.div>
     </motion.div>

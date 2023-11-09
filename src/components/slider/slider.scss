@@ -1,27 +1,28 @@
+@import "../../app.scss";
+
 .slider-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 25px 0;
 
   .slider {
     position: relative;
-    height: 500px;
-    width: 350px;
+    height: 450px;
+    width: 100%;
     overflow: hidden;
 
-    @media only screen and (max-width: 375px) {
-      height: 400px;
-      width: 300px;
+    @include mobile {
+      max-height: 300px;
+      width: 100%;
     }
 
     .image {
       position: absolute;
       height: 100%;
       width: 100%;
-      background-size: cover;
+      background-size: contain;
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: bottom;
       will-change: transform, opacity;
 
       &:hover {
@@ -36,6 +37,9 @@
 
   .buttons {
     margin-top: 12px;
+    @include mobile {
+      margin-top: 4px;
+    }
 
     button {
       outline: none;
@@ -43,11 +47,17 @@
       user-select: none;
       padding: 10px 12px;
       transform: skewY(-5deg) rotate(5deg);
-      background-color: gray;
+      background-color: transparent;
       font-family: inherit;
       font-size: inherit;
-      color: white;
+      color: orange;
       transition: 0.07s ease-out transform;
+      font-size: 36px;
+      font-weight: bold;
+
+      @include mobile {
+        font-size: 24px;
+      }
 
       &:first-of-type {
         margin-right: 15px;
@@ -67,13 +77,17 @@
 .thumbnails {
   display: flex;
   justify-content: center;
+  @include mobile {
+    margin-top: -40px;
+    display: none;
+  }
 
   .thumbnail-container {
     position: relative;
-    height: 120px;
+    height: 100%;
     width: 90px;
 
-    @media only screen and (max-width: 375px) {
+    @include mobile {
       height: 70px;
       width: 50px;
     }
@@ -95,7 +109,7 @@
 
     .active-indicator {
       position: absolute;
-      top: 0;
+      bottom: 0;
       left: 0;
       height: 100%;
       width: 100%;
@@ -104,6 +118,12 @@
       transform-origin: left;
       background-color: gray;
       transition: 1s cubic-bezier(0.56, 0.03, 0.12, 1.04) transform;
+
+      @include mobile {
+        bottom: -20px;
+        height: 50%;
+        width: 100%;
+      }
 
       &.active {
         transform: scaleX(1);
