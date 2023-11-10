@@ -90,7 +90,7 @@ const Contact = () => {
           className="phoneSvg"
           initial={{ opacity: 1 }}
           whileInView={{ opacity: 0 }}
-          transition={{ delay: 3, duration: 1 }}
+          transition={{ delay: 1, duration: 1 }}
         >
           <motion.svg
             xmlns="http://www.w3.org/2000/svg"
@@ -122,7 +122,7 @@ const Contact = () => {
           ref={formRef}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 4, duration: 1 }}
+          transition={{ delay: 2, duration: 1 }}
         >
           <input type="text" required placeholder="Name" name="user_name" />
           <input
