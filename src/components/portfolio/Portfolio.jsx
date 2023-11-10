@@ -27,7 +27,7 @@ const items = [
     title: "Other Projects",
     img: IMAGES.others,
     // demo: "https://auctionhub-app.onrender.com/",
-    list: "https://github.com/tarikozturk017/ecommerce-django",
+    list: "https://github.com/tarikozturk017/portfolio-2/blob/main/project-list.md",
     desc: "Reasype, PlanetBlue, Speed Typing Game, Meme Generator, Tenzies etc. You can see my other projects, test the demo or live demo versions. I used different technologies such as Python, Django, Flask, C/C++, JavaScript, React, TailwindCSS etc. to create these projects.",
   },
 ];
