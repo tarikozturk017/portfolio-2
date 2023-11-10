@@ -91,7 +91,7 @@
       object-fit: cover;
 
       @include mobile {
-        height: fit-content;
+        height: 350px;
       }
     }
   }
