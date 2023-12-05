@@ -55,20 +55,14 @@ const Single = ({ item }) => {
             <p>{item.desc}</p>
             <div className="buttons">
               {item.demo && (
-                <button>
-                  <a href={item.demo} target={"_blank"}>
-                    {" "}
-                    See Demo
-                  </a>
-                </button>
+                <a href={item.demo} target={"_blank"}>
+                  <button> See Demo</button>
+                </a>
               )}
               {item.source && (
-                <button>
-                  <a href={item.source} target={"_blank"}>
-                    {" "}
-                    See Source Code
-                  </a>
-                </button>
+                <a href={item.source} target={"_blank"}>
+                  <button> See Source Code</button>
+                </a>
               )}
               {item.list && (
                 <button>
